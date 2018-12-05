@@ -13,8 +13,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="ImportAgent"
   DTS:PackageType="5"
-  DTS:VersionBuild="142"
-  DTS:VersionGUID="{C8E3E70D-4E42-46E9-A8D1-83CB82BDE66B}">
+  DTS:VersionBuild="149"
+  DTS:VersionGUID="{5AE50F50-A4DC-4742-A47D-905F94695F92}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -52,7 +52,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAm86Zooy5MkKbuyyXfwbQoAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC6XhFjMCBVK14rCbXlJyc6IPC0col4BdWFYrheMeBb7gAAAAAOgAAAAAIAACAAAACxTiRrW+gFSd1EopmX/78ly1FAQxDzg+FgNgrxzQUyfSAAAAD39tuee4yfe8q50/lYs07U0M70imOGEAihJYKpbQcgrkAAAAC/6WxxPJKU9wLo56Xri9SgfxNYzNn9Zl3H1CB5TgQlzcaGHvP51HvPV3i3SyESFWArFS3HACsffxuVTYV/Ba04</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAm86Zooy5MkKbuyyXfwbQoAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADOP1oS/YkLxFNEAKkxjiq0Xty9vuqwRU+D83DNRGviGAAAAAAOgAAAAAIAACAAAAD7R9wBHJGkjr9TFhkZzmX1NcmFav17R48fSVuSYAbcPSAAAAAVoQhlKMlK13FtXnJQmO2GXYtL4/9Rt69FTwlLYHqQ1UAAAADhNpUKFhzTuHx1Era3yqTWQzOmT96DkiXS58WLiJ0LnRegSHo5SJYjkfA7trTDUqRnJYCYctWxCWUCkMc+kN2+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -147,7 +147,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ImportDate">
       <DTS:VariableValue
-        DTS:DataType="7">12/5/2018 10:06:22 AM</DTS:VariableValue>
+        DTS:DataType="7">12/5/2018 3:13:45 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -2502,14 +2502,35 @@ WHERE
           Language="CSharp"
           ReadOnlyVariables="User::BadRecords_Count,User::BadRecords_FileName,User::BadRecords_FolderPath,User::ClientAgentTemplate_FilePath">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_c4b06cf4c15d4fd99ead8edf9859cc2f")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_c4b06cf4c15d4fd99ead8edf9859cc2f")]
+[assembly: AssemblyCopyright("Copyright @  2018")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -2916,35 +2937,14 @@ namespace ST_c4b06cf4c15d4fd99ead8edf9859cc2f.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_c4b06cf4c15d4fd99ead8edf9859cc2f")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_c4b06cf4c15d4fd99ead8edf9859cc2f")]
-[assembly: AssemblyCopyright("Copyright @  2018")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -3503,15 +3503,15 @@ namespace ST_a51e074ffa9c43cc873d89a4f6e85164
             Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:Language>msBuild</msb:Language>
 		<msb:CodeName>ST_a51e074ffa9c43cc873d89a4f6e85164</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
 		<msb:DisplayName>ST_a51e074ffa9c43cc873d89a4f6e85164</msb:DisplayName>
 		<msb:ProjectId>{2B26DD0C-BB7A-40C2-9F68-F108F4AED4BF}</msb:ProjectId>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="ST_a51e074ffa9c43cc873d89a4f6e85164.csproj"/>
-		<msb:File Include="Properties\Settings.settings"/>
 		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
 		<msb:File Include="Properties\Resources.resx"/>
 		<msb:File Include="Properties\Resources.Designer.cs"/>
 		<msb:File Include="Properties\Settings.Designer.cs"/>
@@ -3648,7 +3648,7 @@ namespace ST_a51e074ffa9c43cc873d89a4f6e85164.Properties {
           <BinaryItem
             Name="ST_a51e074ffa9c43cc873d89a4f6e85164.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAB3W6VsAAAAAAAAAAOAAAiELAQsAABAAAAAIAAAAAAAAHi8A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDALsPCFwAAAAAAAAAAOAAAiELAQsAABAAAAAIAAAAAAAAHi8A
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAANAuAABLAAAAAEAAAAgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3682,7 +3682,7 @@ vAEbAKEAFARiAKEALwRpACkAvAFuALkAvAF6AMkAvAEbABEAvAEbANEAvAEbABkA1gSNANkAJwWS
 AOEAPgWXAOkARwWdAPkAXgWhAAEBdAWnAAEBewWsANkAggVdABkAvAEbAAgAFABOAAgAGABTACkA
 kwCAAC4AGwAiAS4AIwAiAS4AYwBIAS4ACwCxAC4AEwD5AC4AMwD5AC4AKwAiAS4AOwAoAS4AQwAi
 AS4AWwA/AUMAawBTAEkAkwCAAGEAmwBTAIMAqwBTAHUAAgABAAMAAwAAAG8BLwAAAO4BNAAAABIC
-QgACAAIAAwACAAMABQABAAQABQACAAUABwAEgAAAAQAAAOoatnQAAAAAAAB/AAAABAAAAAAAAAAA
+QgACAAIAAwACAAMABQABAAQABQACAAUABwAEgAAAAQAAAAEbRWgAAAAAAAB/AAAABAAAAAAAAAAA
 AAAAAQCxAAAAAAAEAAAAAAAAAAAAAAABALoAAAAAAAsAAAAAAAAAAAAAAAoA9QAAAAAACwAAAAAA
 AAAAAAAACgDeBAAAAAAAAAAAAQAAAJEFAAAFAAQAAAAAAAA8TW9kdWxlPgBTVF9hNTFlMDc0ZmZh
 OWM0M2NjODczZDg5YTRmNmU4NTE2NC5kbGwAUmVzb3VyY2VzAFNUX2E1MWUwNzRmZmE5YzQzY2M4
@@ -3714,8 +3714,8 @@ ODlhNGY2ZTg1MTY0LlByb3BlcnRpZXMuUmVzb3VyY2VzLnJlc291cmNlcwAAcVMAVABfAGEANQAx
 AGUAMAA3ADQAZgBmAGEAOQBjADQAMwBjAGMAOAA3ADMAZAA4ADkAYQA0AGYANgBlADgANQAxADYA
 NAAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAIUIAYQBkAFIAZQBj
 AG8AcgBkAHMAXwBDAG8AdQBuAHQAACtCAGEAZABSAGUAYwBvAHIAZABzAF8ARgBvAGwAZABlAHIA
-UABhAHQAaAAAJ0IAYQBkAFIAZQBjAG8AcgBkAHMAXwBGAGkAbABlAE4AYQBtAGUAAAAAAFHJqma8
-mOZCutBq31L9+UcACLd6XFYZNOCJCImEXc2AgMyRAwYSFQMGEhkDIAABBAAAEhUEAAASGQUAAQES
+UABhAHQAaAAAJ0IAYQBkAFIAZQBjAG8AcgBkAHMAXwBGAGkAbABlAE4AYQBtAGUAAAAAAMqkogBQ
+zG1EhRETWZJAc/4ACLd6XFYZNOCJCImEXc2AgMyRAwYSFQMGEhkDIAABBAAAEhUEAAASGQUAAQES
 GQQIABIVBAgAEhkDBhIMBAAAEgwECAASDAIGCAMGERQEAAAAAAQBAAAABCABAQ4EIAEBCAYAARJR
 EVUEIAASWQYgAgEOElkEBwESFQUgAQERYQgBAAIAAAAAAAMAAAEEIAASbQQgABJxBSABEnUcAyAA
 HAUAAg4ODgQAAQIOBAABAQ5HAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjABAFQOFEZyYW1l
@@ -3729,13 +3729,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAA
 AABIAAAAWEAAALADAAAAAAAAAAAAALADNAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBP
-AAAAAAC9BO/+AAABAAAAAQC2dOoaAAABALZ06ho/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
+AAAAAAC9BO/+AAABAAAAAQBFaAEbAAABAEVoARs/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
 RAAAAAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBv
 AG4AAAAAAAAAsAQQAwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAADsAgAAAQAwADAA
 MAAwADAANABiADAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBU
 AF8AYQA1ADEAZQAwADcANABmAGYAYQA5AGMANAAzAGMAYwA4ADcAMwBkADgAOQBhADQAZgA2AGUA
-OAA1ADEANgA0AAAAQAAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADYAOAA5
-ADAALgAyADkAOAA3ADgAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBUAF8A
+OAA1ADEANgA0AAAAQAAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADYAOQAx
+ADMALgAyADYANgA5ADMAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBUAF8A
 YQA1ADEAZQAwADcANABmAGYAYQA5AGMANAAzAGMAYwA4ADcAMwBkADgAOQBhADQAZgA2AGUAOAA1
 ADEANgA0AC4AZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8A
 cAB5AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAxADgAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBp
@@ -3743,8 +3743,8 @@ AGwAZQBuAGEAbQBlAAAAUwBUAF8AYQA1ADEAZQAwADcANABmAGYAYQA5AGMANAAzAGMAYwA4ADcA
 MwBkADgAOQBhADQAZgA2AGUAOAA1ADEANgA0AC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0
 AE4AYQBtAGUAAAAAAFMAVABfAGEANQAxAGUAMAA3ADQAZgBmAGEAOQBjADQAMwBjAGMAOAA3ADMA
 ZAA4ADkAYQA0AGYANgBlADgANQAxADYANAAAAEQADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBp
-AG8AbgAAADEALgAwAC4ANgA4ADkAMAAuADIAOQA4ADcAOAAAAAAASAAPAAEAQQBzAHMAZQBtAGIA
-bAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANgA4ADkAMAAuADIAOQA4ADcAOAAAAAAAAAAA
+AG8AbgAAADEALgAwAC4ANgA5ADEAMwAuADIANgA2ADkAMwAAAAAASAAPAAEAQQBzAHMAZQBtAGIA
+bAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANgA5ADEAMwAuADIANgA2ADkAMwAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -7311,7 +7311,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{27DF7940-1034-4A73-A65F-932445A2642C}"
-          SQLTask:SqlStatementSource="DECLARE @AgencyID INT = ?; --&gt; CalChoice&#xA;&#xA;    /*=======================================&#xA;    -- &gt; 1.Check SSN field&#xA;    =========================================*/&#xA;&#xA;UPDATE template&#xA;  SET&#xA;      [BadRecordReason] = 'Invalid Agent SSN value'&#xA;FROM ##AgentTemplateTable template&#xA;WHERE ISNULL([SSN], '') = ''&#xA;&#xA;    /*=======================================&#xA;    -- &gt; 2.Check Duplicate SSN &#xA;    =========================================*/&#xA;&#xA;UPDATE template&#xA;  SET&#xA;      [BadRecordReason] = 'Duplicate key Agent SSN'&#xA;FROM ##AgentTemplateTable template&#xA;     INNER JOIN Paymaster.dbo.ayAgentInfo ON ayAgentInfo.SSN_TaxID = template.[SSN]&#xA;                                             AND ayAgentInfo.AgencyID = @AgencyID&#xA;&#xA;&#xA;    /*=======================================&#xA;    -- &gt; 3.Check Duplicate agent code&#xA;    =========================================*/&#xA;&#xA;UPDATE template&#xA;  SET&#xA;      [BadRecordReason] = 'Duplicate key Agent Code'&#xA;FROM ##AgentTemplateTable template&#xA;     INNER JOIN Paymaster.dbo.ayAgentInfo ON ayAgentInfo.AgentNumber = template.AgentNumber&#xA;                                             AND ayAgentInfo.AgencyID = @AgencyID&#xA;&#xA;    /*=======================================&#xA;    -- &gt; 3.Check Duplicate agent code&#xA;    =========================================*/&#xA;&#xA;SELECT count(*) BadRows_Count&#xA;FROM ##AgentTemplateTable &#xA;&#x9;WHERE ISNULL([BadRecordReason],'') &lt;&gt; ''"
+          SQLTask:SqlStatementSource="DECLARE @AgencyID INT= ?; --&gt; CalChoice&#xA;&#xA;/*=======================================&#xA;    -- &gt; 1.Check SSN field&#xA;    =========================================*/&#xA;&#xA;UPDATE template&#xA;  SET&#xA;      [BadRecordReason] = 'Invalid Agent SSN value'&#xA;FROM ##AgentTemplateTable template&#xA;WHERE ISNULL([SSN], '') = '';&#xA;&#xA;    /*=======================================&#xA;    -- &gt; 2.Check Duplicate SSN &#xA;    =========================================*/&#xA;&#xA;UPDATE template&#xA;  SET&#xA;      [BadRecordReason] = 'Duplicate key Agent SSN'&#xA;FROM ##AgentTemplateTable template&#xA;     INNER JOIN Paymaster.dbo.ayAgentInfo ON ayAgentInfo.SSN_TaxID = template.[SSN]&#xA;                                             AND ayAgentInfo.AgencyID = @AgencyID;&#xA;&#xA;&#xA;    /*=======================================&#xA;    -- &gt; 3.Check agent code&#xA;    =========================================*/&#xA;&#xA;UPDATE template&#xA;  SET&#xA;      [BadRecordReason] = 'Invalid Agent code'&#xA;FROM ##AgentTemplateTable template&#xA;WHERE ISNULL(AgentNumber, '') = '';&#xA;&#xA;&#xA;    /*=======================================&#xA;    -- &gt; 4.Check Duplicate agent code&#xA;    =========================================*/&#xA;&#xA;UPDATE template&#xA;  SET&#xA;      [BadRecordReason] = 'Duplicate key Agent Code'&#xA;FROM ##AgentTemplateTable template&#xA;     INNER JOIN Paymaster.dbo.ayAgentInfo ON ayAgentInfo.AgentNumber = template.AgentNumber&#xA;                                             AND ayAgentInfo.AgencyID = @AgencyID;&#xA;&#xA;&#xA;&#xA; SELECT COUNT(*) AS [BadRows_Count]&#xA; FROM ##AgentTemplateTable template&#xA;    WHERE ISNULL(template.[BadRecordReason],'')&lt;&gt;'';"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
             SQLTask:ResultName="BadRows_Count"
@@ -7401,6 +7401,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Id="Package\Clean Bad Records File"
           TopLeft="453,458" />
         <NodeLayout
+          Size="243,42"
+          Id="Package\Create temporary table destination"
+          TopLeft="422,110" />
+        <NodeLayout
           Size="264,42"
           Id="Package\Import Agents Template To Temporary"
           TopLeft="415,195" />
@@ -7412,6 +7416,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Size="164,42"
           Id="Package\Mark Bad Records"
           TopLeft="468,267" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="545.25,152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="548.5,237">
@@ -7426,6 +7452,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="547.25,69">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7524,54 +7572,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="243,42"
-          Id="Package\Create temporary table destination"
-          TopLeft="422,110" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="545.25,152">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43"
-              Start="0,0"
-              End="0,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="547.25,69">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41"
-              Start="0,0"
-              End="0,33.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -7579,7 +7579,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     design-time-name="Package\Bad Records Mapping">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="158,42"
           Id="Package\Bad Records Mapping\Pull Bad Records"
@@ -7623,7 +7623,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7657,7 +7659,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7688,7 +7692,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     design-time-name="Package\Import Agents Template To Temporary">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="207,42"
           Id="Package\Import Agents Template To Temporary\Change Unicode to Varchar"
@@ -7724,7 +7728,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7746,7 +7752,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7768,7 +7776,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
