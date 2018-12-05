@@ -7,13 +7,14 @@
   DTS:CreatorName="fperez-laptop\fperez"
   DTS:DelayValidation="True"
   DTS:DTSID="{EA5A5BD0-DCAC-4D28-B8E5-335E0D391A01}"
+  DTS:EnableConfig="True"
   DTS:ExecutableType="SSIS.Package.3"
   DTS:LastModifiedProductVersion="11.0.5583.0"
   DTS:LocaleID="11274"
   DTS:ObjectName="ImportAgent"
   DTS:PackageType="5"
-  DTS:VersionBuild="126"
-  DTS:VersionGUID="{761968F1-972C-4E2D-A3B5-CB9C582BA37B}">
+  DTS:VersionBuild="142"
+  DTS:VersionGUID="{C8E3E70D-4E42-46E9-A8D1-83CB82BDE66B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -26,7 +27,7 @@
         DTS:Name="ExcelFilePath">@[User::BadRecords_FolderPath]+ @[User::BadRecords_FileName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\TKTLC\Paymaster-CalChoice\Paymaster-Client-Import-Template\SSIS_AgentTemplate_BadRecords_2018_11_29.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\TKTLC\Paymaster-CalChoice\Paymaster-Client-Import-Template\SSIS_AgentTemplate_BadRecords_2018_12_5.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -36,7 +37,7 @@
       DTS:ObjectName="Client Agents source">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\TKTLC\Paymaster\PayMaster_ImportAgentTemplate_SSIS\Paymaster-Client-Import-Template\CalChoiceAgentTemplate.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\TKTLC\Paymaster-CalChoice\Paymaster-Client-Import-Template\CalChoiceAgentTemplate.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -49,25 +50,9 @@
           DTS:Retain="True"
           DTS:ConnectionString="Data Source=dev-sql02;User ID=fredy;Initial Catalog=Paymaster;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
           <DTS:Password
-            DTS:Name="Password"
+            DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAm86Zooy5MkKbuyyXfwbQoAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD5kIGiIprHcYgF1A6BoCHwJq+fj0MBwYXcQuvYK46jZgAAAAAOgAAAAAIAACAAAAAFKmbSLcVZMPR2FSgmhcfTNOPKINl+ADad9lBXX2kZmyAAAABMr/xLA4Xy6jQ8LNZQSQmUDk+exLZCZg66OTUruDZc90AAAAC+uQ5Nkae+xwFecuWF6JRQWpN7i+Em1mSww6Wh+eKR66a1OCKXf/IAJDsNRzoaxEfAEqih/IGQkYnzEYZarMEN</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[PaymasterDB]"
-      DTS:CreationName="ADO.NET:SQL"
-      DTS:DTSID="{6BD4F798-1305-4C64-B252-31CD9CEE65FB}"
-      DTS:ObjectName="PaymasterDB">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Retain="True"
-          DTS:ConnectionString="Data Source=dev-sql02;User ID=fredy;Initial Catalog=Paymaster;Persist Security Info=True;Connect Timeout=30;Application Name=SSIS-Package-{6BD4F798-1305-4C64-B252-31CD9CEE65FB}PaymasterDB;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAm86Zooy5MkKbuyyXfwbQoAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAaK6cQPpkQbzTFUgViKi/ZcJe0igFGrbzwZJ6nidI2pQAAAAAOgAAAAAIAACAAAACQVkpZJCug+A7AFfT1V8SsukNHc9xI5ua+frCRLyTjryAAAAAKnHUym1olQbeIW0MUqNIQzPfRC2P/ZuJER+rlqSeWU0AAAABk/kFfZ7gFzAT2NZYUwc8p+nxIxtK+ZJj151YrIantQ4+3dMKIy+7EsYFQ4YOvHiZM7eb53QxB3Lnslf7bIvc2</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAm86Zooy5MkKbuyyXfwbQoAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC6XhFjMCBVK14rCbXlJyc6IPC0col4BdWFYrheMeBb7gAAAAAOgAAAAAIAACAAAACxTiRrW+gFSd1EopmX/78ly1FAQxDzg+FgNgrxzQUyfSAAAAD39tuee4yfe8q50/lYs07U0M70imOGEAihJYKpbQcgrkAAAAC/6WxxPJKU9wLo56Xri9SgfxNYzNn9Zl3H1CB5TgQlzcaGHvP51HvPV3i3SyESFWArFS3HACsffxuVTYV/Ba04</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -81,10 +66,18 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:FileUsageType="1"
-          DTS:ConnectionString="D:\TKTLC\Paymaster-CalChoice\Paymaster-Client-Import-Template\SSIS_AgentTemplateImport_logging_2018_11_29.txt" />
+          DTS:ConnectionString="D:\TKTLC\Paymaster-CalChoice\Paymaster-Client-Import-Template\SSIS_AgentTemplateImport_logging_2018_12_5.txt" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:Configurations>
+    <DTS:Configuration
+      DTS:ConfigurationString="D:\TKTLC\Paymaster\PayMaster_ImportAgentTemplate_SSIS\PackageConfigs.dtsConfig"
+      DTS:ConfigurationType="1"
+      DTS:CreationName=""
+      DTS:DTSID="{CDDB55A5-680F-49B3-848B-E2E466A5DFBE}"
+      DTS:ObjectName="ConfigFile" />
+  </DTS:Configurations>
   <DTS:LogProviders>
     <DTS:LogProvider
       DTS:ConfigString="SSIS-AgentTemplateImport-logging.txt"
@@ -125,7 +118,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="BadRecords_FileName">
       <DTS:VariableValue
-        DTS:DataType="8">SSIS_AgentTemplate_BadRecords_2018_11_29.xlsx</DTS:VariableValue>
+        DTS:DataType="8">SSIS_AgentTemplate_BadRecords_2018_12_5.xlsx</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -154,7 +147,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ImportDate">
       <DTS:VariableValue
-        DTS:DataType="7">11/29/2018 9:11:29 PM</DTS:VariableValue>
+        DTS:DataType="7">12/5/2018 10:06:22 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -3775,26 +3768,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Create temporary table destination"
-      DTS:CreationName="Microsoft.SqlServer.Management.DatabaseMaintenance.DbMaintenanceTSQLExecuteTask, Microsoft.SqlServer.MaintenancePlanTasks, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
-      DTS:Description="Execute T-SQL Statement Task"
-      DTS:DTSID="{76FA8F79-700B-4BF0-A4C4-B660246582CF}"
-      DTS:ExecutableType="Microsoft.SqlServer.Management.DatabaseMaintenance.DbMaintenanceTSQLExecuteTask, Microsoft.SqlServer.MaintenancePlanTasks, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{EEEF80BB-0A80-49D7-962D-A3F240064B48}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
       DTS:LocaleID="-1"
       DTS:ObjectName="Create temporary table destination"
-      DTS:TaskContact="Execute T-SQL Statement Task; Microsoft Corporation; Microsoft SQL Server v9; © 2004 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
-      <DTS:LoggingOptions
-        DTS:FilterKind="0" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{6BD4F798-1305-4C64-B252-31CD9CEE65FB}"
-          SQLTask:SqlStatementSource="/* Create a LOCAL temp table*/&#xA;IF&#xA;(&#xA;Object_id('[tempdb].[dbo].[##AgentTemplateTable]')&#xA;IS NOT NULL&#xA;)&#xA;DROP TABLE&#xA;[tempdb].[dbo].[##AgentTemplateTable]&#xA;GO&#xA; &#xA;CREATE TABLE [##AgentTemplateTable]&#xA;(&#xA;id INT IDENTITY,&#xA;AgentID INT,&#xA;AgentNumber VARCHAR(20),&#xA;FirstName VARCHAR(50),&#xA;LastName VARCHAR(50),&#xA;SSN VARCHAR(24),&#xA;[Address] VARCHAR(100),&#xA;City VARCHAR(24),&#xA;[State] CHAR(2),&#xA;[Zip] VARCHAR(15),&#xA;[BusinessAddress] VARCHAR(100),&#xA;BusinessCity VARCHAR(24),&#xA;[BusinessState] CHAR(2),&#xA;[BusinessZip] VARCHAR(15),&#xA;[Birthdate] DATETIME,&#xA;[Email] VARCHAR(100),&#xA;[CellPhone] VARCHAR(50),&#xA;[HomePhone] VARCHAR(50),&#xA;[BusinessPhone] VARCHAR(50),&#xA;[UplineCodeNumber] VARCHAR(20),&#xA;[UplineName] VARCHAR(100),&#xA;[CurrentPayStatus] VARCHAR(30),&#xA;[StatusStartDate] DATETIME,&#xA;[CurrentLevel] VARCHAR(10),&#xA;[LevelStartDate] DATETIME,&#xA;[AccountType] VARCHAR(50),&#xA;[BankName] VARCHAR(100),&#xA;[RoutingNumber] VARCHAR(50),&#xA;[AccountNumber] VARCHAR(50),&#xA;[BadRecordReason] VARCHAR(100)&#xA;);&#xA;GO"
-          SQLTask:ServerVersion="9"
-          SQLTask:ExtendedLogging="True"
-          SQLTask:LocalConnectionForLogging=""
-          SQLTask:TaskName=""
-          SQLTask:IgnoreDatabasesInNotOnlineState="False" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{27DF7940-1034-4A73-A65F-932445A2642C}"
+          SQLTask:SqlStatementSource="/* Create a LOCAL temp table*/&#xA;IF&#xA;(&#xA;Object_id('[tempdb].[dbo].[##AgentTemplateTable]')&#xA;IS NOT NULL&#xA;)&#xA;DROP TABLE&#xA;[tempdb].[dbo].[##AgentTemplateTable]&#xA;GO&#xA; &#xA;CREATE TABLE [##AgentTemplateTable]&#xA;(&#xA;id INT IDENTITY,&#xA;AgentID INT,&#xA;AgentNumber VARCHAR(20),&#xA;FirstName VARCHAR(50),&#xA;LastName VARCHAR(50),&#xA;SSN VARCHAR(24),&#xA;[Address] VARCHAR(100),&#xA;City VARCHAR(24),&#xA;[State] CHAR(2),&#xA;[Zip] VARCHAR(15),&#xA;[BusinessAddress] VARCHAR(100),&#xA;BusinessCity VARCHAR(24),&#xA;[BusinessState] CHAR(2),&#xA;[BusinessZip] VARCHAR(15),&#xA;[Birthdate] DATETIME,&#xA;[Email] VARCHAR(100),&#xA;[CellPhone] VARCHAR(50),&#xA;[HomePhone] VARCHAR(50),&#xA;[BusinessPhone] VARCHAR(50),&#xA;[UplineCodeNumber] VARCHAR(20),&#xA;[UplineName] VARCHAR(100),&#xA;[CurrentPayStatus] VARCHAR(30),&#xA;[StatusStartDate] DATETIME,&#xA;[CurrentLevel] VARCHAR(10),&#xA;[LevelStartDate] DATETIME,&#xA;[AccountType] VARCHAR(50),&#xA;[BankName] VARCHAR(100),&#xA;[RoutingNumber] VARCHAR(50),&#xA;[AccountNumber] VARCHAR(50),&#xA;[BadRecordReason] VARCHAR(100)&#xA;);&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -7344,7 +7330,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{BEDF1698-B7D4-414D-A2CA-E0E60080CDD8}"
+      DTS:DTSID="{9E4DB1C0-6942-40F7-A81D-5DBC99D8AD28}"
       DTS:From="Package\Create temporary table destination"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -7360,7 +7346,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{2C704F04-2473-48A3-A17F-51A0F7280998}"
+      DTS:DTSID="{DB4FB1BC-7E84-456E-B0EB-E8C96D14B57E}"
       DTS:From="Package\Check Bad Records File"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
@@ -7409,15 +7395,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <NodeLayout
           Size="188,42"
           Id="Package\Check Bad Records File"
-          TopLeft="442,34" />
+          TopLeft="457,27" />
         <NodeLayout
           Size="186,42"
           Id="Package\Clean Bad Records File"
           TopLeft="453,458" />
-        <NodeLayout
-          Size="243,42"
-          Id="Package\Create temporary table destination"
-          TopLeft="417,124" />
         <NodeLayout
           Size="264,42"
           Id="Package\Import Agents Template To Temporary"
@@ -7430,40 +7412,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Size="164,42"
           Id="Package\Mark Bad Records"
           TopLeft="468,267" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="538.5,166">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="8.5,29"
-              Start="0,0"
-              End="8.5,21.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,10.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,10.5"
-                    Point2="0,14.5"
-                    Point3="4,14.5" />
-                  <mssgle:LineSegment
-                    End="4.5,14.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4.5,14.5"
-                    Point2="8.5,14.5"
-                    Point3="8.5,18.5" />
-                  <mssgle:LineSegment
-                    End="8.5,21.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="548.5,237">
@@ -7478,28 +7426,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,22.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="537.25,76">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48"
-              Start="0,0"
-              End="0,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7590,6 +7516,54 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     Point3="18.7706422018349,47.3333333333333" />
                   <mssgle:LineSegment
                     End="27.5,47.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="243,42"
+          Id="Package\Create temporary table destination"
+          TopLeft="422,110" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="545.25,152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="547.25,69">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41"
+              Start="0,0"
+              End="0,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7714,7 +7688,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     design-time-name="Package\Import Agents Template To Temporary">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="207,42"
           Id="Package\Import Agents Template To Temporary\Change Unicode to Varchar"
@@ -7750,9 +7724,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7774,9 +7746,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7798,9 +7768,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

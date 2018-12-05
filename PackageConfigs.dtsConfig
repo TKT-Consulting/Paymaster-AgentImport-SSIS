@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="fperez-laptop\fperez" GeneratedFromPackageName="ImportAgent" GeneratedFromPackageID="{EA5A5BD0-DCAC-4D28-B8E5-335E0D391A01}" GeneratedDate="5/12/2018 09:17:59"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Client Agent Template].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Provider=Microsoft.ACE.OLEDB.12.0;User ID=;Data Source=D:\TKTLC\Paymaster-CalChoice\Paymaster-Client-Import-Template\SSIS_AgentTemplate_BadRecords_2018_12_5.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Client Agents source].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Provider=Microsoft.ACE.OLEDB.12.0;User ID=;Data Source=D:\TKTLC\Paymaster-CalChoice\Paymaster-Client-Import-Template\CalChoiceAgentTemplate.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[dev-sql02.Paymaster.fredy].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=dev-sql02;User ID=fredy;password=Mar de Plat@;Initial Catalog=Paymaster;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[SSIS-AgentTemplateImport-logging.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\TKTLC\Paymaster-CalChoice\Paymaster-Client-Import-Template\SSIS_AgentTemplateImport_logging_2018_12_5.txt</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::AgencyID].Properties[Value]" ValueType="Int32">
+    <ConfiguredValue>19</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::BadRecords_FileName].Properties[Value]" ValueType="String">
+    <ConfiguredValue>SSIS_AgentTemplate_BadRecords_2018_12_5.xlsx</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::BadRecords_FolderPath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>D:\TKTLC\Paymaster-CalChoice\Paymaster-Client-Import-Template\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::ClientAgentTemplate_FilePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>D:\TKTLC\Paymaster-CalChoice\Paymaster-Client-Import-Template\AgentTemplate.xlsx</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::LogFilePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>D:\TKTLC\Paymaster-CalChoice\Paymaster-Client-Import-Template\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::TempTableName].Properties[Value]" ValueType="String">
+    <ConfiguredValue>##AgentTemplateTable</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>
